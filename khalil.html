@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            background: url("back.jpg");
+            background-size: cover;
+            padding: 10px;
+
+        }
+
+        .parent a {
+            color: #fff;
+            font-size: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            padding: 5px;
+            background-color: brown;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            letter-spacing: 2px;
+        }
+
+        h2 span:hover {
+            color: rgba(255, 255, 255, 0.712);
+            font-size: 30px;
+            line-height: 1.5em;
+            font-weight: bold;
+            letter-spacing: 5px;
+            transition: 0.5s ease;
+
+        }
+
+        h2 {
+            color: white;
+            font-style: oblique;
+            font-size: 30px;
+            text-align: center;
+            padding-left: 200px;
+        }
+
+        h2 span {
+            color: white;
+            font-size: 60px;
+        }
+
+
+
+        div img {
+            width: 400px;
+            height: 350px;
+            border-radius: 50px;
+
+        }
+
+
+        .content {
+            width: 100%;
+            min-height: 100vh;
+            background: url("pizza.jpg");
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.856);
+            display: flex;
+            justify-content: space-between;
+            padding: 100px;
+        }
+
+        p {
+            text-align: left;
+            padding: 20px;
+            margin-bottom: 30px;
+            font-size: 30px;
+            color: #fff;
+        }
+
+        ol {
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+            font-style: italic;
+
+        }
+
+        .table {
+            min-height: 100vh;
+            background-color: rgba(0, 0, 0, 0.856);
+            background-size: cover;
+            /* padding: 100px; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .table div a {
+
+            font-size: 30px;
+            color: #fff;
+            font-style: italic;
+            text-decoration: none;
+
+
+        }
+
+        table {
+
+            background-color: #fff;
+            border-radius: 20px;
+            border-color: black;
+        }
+
+        form {
+            padding: 200px 50px;
+        }
+
+        .meal {
+            padding: 0 0 0 40px;
+        }
+        .cal{
+            padding-top: 300px;
+            padding-right: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="parent">
+        <div>
+            <h2>PIZZA <span>ALBALAD</span> </h2>
+        </div>
+
+
+        <div class="link">
+            <a href="www.home" target="_blank" title="Go To HOME">HOME</a>
+            <a href="">MENU</a>
+            <a href="">OFFER</a>
+            <a href="">ABOUT</a>
+            <a href="">CONTACT</a>
+            <br>
+            <br>
+
+            <!-- <div><img src="logo (2).jpg">
+            </div>
+            <div><img src="pasta.jpg" alt=""> </div> -->
+
+
+    </section>
+    <div class="content">
+        <div>
+            <P>&#128525<i>WELCOM IN PIZZA ALBALAD</i>&#128151</P>
+            <video controls width="500px" height="700px" poster="">
+                <source src="piz.mp4">
+        </div>
+
+
+        <ol type="A"> THE MEALS
+            <li>
+                <img src="list.jpg" alt="" width="200px" height="300px">
+            </li>
+            <li>
+                <img src="list2.jpg" alt="" width="200px" height="300px">
+            </li>
+        </ol>
+
+
+    </div>
+    <div class="table">
+        <div> <a href="www.delivery">DELIVARYMAN</a>
+            <br>
+            <img src="delivery.jpg" alt="" width="200px" height="100px">
+        </div>
+
+        <table border="4px">
+            <caption><i style="font-size: 30px;color:#fff;">THE PRICES</i> </caption>
+            <thead>
+                <tr>
+
+                    <th style="color: black;">TYPE</th>
+                    <th style="color: black;">PIZZA</th>
+                    <th style="color: black;">BASTAH</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="color: #000;;">PRICE</td>
+                    <td style="color: #000;;">3$</td>
+                    <td style="color:#000;">3.5$</td>
+                </tr>
+        </table>
+        <div>
+            <label for="meal" class="meal">Choose your meal:</label>
+            <select name="meal" id="meal">
+                <optgroup label="pizza">
+                    <option value="1">vegetable pizza</option>
+                    <option value="2">mushroom pizza</option>
+                    <option value="3">cheese pizza</option>
+                </optgroup>
+                <optgroup label="bostah">
+                    <option value="4">Farfuoly</option>
+                    <option value="5"> selected>Banaretah</option>
+                    <option valu="6">Spaghetti</option>
+                </optgroup>
+            </select>
+            <form action="" method="post" target="blanck_" novalidate>
+                <label for="meal">meal Name:</label>
+                <input type="text" placeholder="Name" id="meal" required>
+                <br>
+                <br>
+                <button><input type="submit"></button>
+                <button><input type="reset"></button>
+        </div>
+
+        <div class="cal"> <a href="tale.com">//whatsapp:+963 0987652310 </a>
+            <br>
+            <a href="fasebook.com">//http://www.pizzaalalab.com123s</a>
+        </div>
+
+
+</body>
+
+</html>
